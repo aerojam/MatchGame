@@ -66,6 +66,7 @@ namespace MatchGame
                     int index = random.Next(animalEmoji.Count);
                     string nextEmoji = animalEmoji[index];
                     textBlock.Text = nextEmoji;
+                    textBlock.Visibility = Visibility.Visible;
                     animalEmoji.RemoveAt(index);
                 }
             }
@@ -100,7 +101,7 @@ namespace MatchGame
             }
         }
 
-        private void timeTextBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        private void TimeTextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (matchesFound == 8)
             {
